@@ -1,0 +1,135 @@
+.contact-section {
+  padding: var(--section-padding);
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text);
+  opacity: 0.6;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent-teal);
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-submit {
+  padding: 14px 32px;
+  background: transparent;
+  border: 1px solid var(--accent-teal);
+  color: var(--accent-teal);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+  align-self: flex-start;
+}
+
+.contact-submit:hover {
+  background: var(--accent-teal);
+  color: var(--bg);
+}
+
+.contact-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text-cream);
+  margin-bottom: 16px;
+}
+
+.contact-info p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.contact-linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: #0a66c2;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(10, 102, 194, 0.25);
+}
+
+.contact-linkedin-btn:hover {
+  background: #084d94;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(10, 102, 194, 0.35);
+}
+
+.contact-linkedin-btn svg {
+  flex-shrink: 0;
+}
+
+.contact-status {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.contact-status-sending {
+  color: var(--text);
+  font-style: italic;
+}
+
+.contact-status-success {
+  background: rgba(52, 211, 153, 0.12);
+  color: #34d399;
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.contact-status-error {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

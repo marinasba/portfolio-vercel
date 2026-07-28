@@ -1,0 +1,148 @@
+.about-section {
+  padding: var(--section-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.about-text h3 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text-cream);
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.btn-cv {
+  text-decoration: none;
+}
+
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #0a66c2;
+  text-decoration: none;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.btn-linkedin:hover {
+  border-color: #0a66c2;
+  background: rgba(10, 102, 194, 0.1);
+}
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.btn-github:hover {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.about-hobbies h4,
+.about-languages h4 {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+  margin-bottom: 16px;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.hobby-tag {
+  padding: 6px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  transition: border-color 0.3s;
+}
+
+.hobby-tag:hover {
+  border-color: var(--accent-pink);
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.3s;
+}
+
+.language-item:hover {
+  border-color: var(--accent-teal);
+}
+
+.language-flag { font-size: 1.3rem; }
+.language-name { color: var(--text-light); font-size: 0.85rem; font-weight: 500; }
+.language-level { color: var(--text); font-size: 0.75rem; opacity: 0.7; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-photo { max-width: 300px; margin: 0 auto; }
+  .languages-list { flex-direction: column; }
+}

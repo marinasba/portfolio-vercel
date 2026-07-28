@@ -1,0 +1,64 @@
+.star-border-container {
+  position: relative;
+  display: inline-block;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.border-gradient-bottom {
+  position: absolute;
+  width: 300%;
+  height: 50%;
+  bottom: -11%;
+  right: -250%;
+  border-radius: 100%;
+  animation: star-border-rotate linear infinite;
+  animation-duration: 6s;
+  opacity: 0.7;
+}
+
+.border-gradient-top {
+  position: absolute;
+  width: 300%;
+  height: 50%;
+  top: -11%;
+  left: -250%;
+  border-radius: 100%;
+  animation: star-border-rotate linear infinite;
+  animation-duration: 6s;
+  opacity: 0.7;
+}
+
+@keyframes star-border-rotate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.inner-content {
+  position: relative;
+  background: var(--bg-card, #0d1117);
+  border-radius: 20px;
+  padding: 10px 24px;
+  z-index: 1;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.star-border-container:hover .inner-content {
+  background: var(--bg-card-hover, #161e28);
+}

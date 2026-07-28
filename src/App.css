@@ -1,0 +1,6 @@
+/* App-level layout — minimal, sections handle their own styles */
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}

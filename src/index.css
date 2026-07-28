@@ -1,0 +1,144 @@
+/* ── CSS Variables ── */
+:root {
+  --bg: #080c12;
+  --bg-light: #0d1117;
+  --bg-card: #111820;
+  --bg-card-hover: #161e28;
+  --text: #94a3b8;
+  --text-light: #cbd5e1;
+  --text-heading: #f1e8d8;
+  --text-cream: #f5ead6;
+  --accent-teal: #5eead4;
+  --accent-pink: #f472b6;
+  --accent-purple: #a78bfa;
+  --accent-orange: #fb923c;
+  --accent-blue: #60a5fa;
+  --border: rgba(148, 163, 184, 0.1);
+  --border-hover: rgba(148, 163, 184, 0.2);
+  --glass-bg: rgba(8, 12, 18, 0.7);
+  --glass-border: rgba(148, 163, 184, 0.08);
+  --glow-teal: 0 0 20px rgba(94, 234, 212, 0.15);
+  --glow-pink: 0 0 20px rgba(244, 114, 182, 0.15);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --section-padding: 100px 0;
+  --container-width: 1100px;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--accent-teal);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--accent-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+input, textarea {
+  font-family: var(--font-sans);
+}
+
+/* ── Utility ── */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--text-cream);
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(94, 234, 212, 0.2);
+  color: var(--text-cream);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}

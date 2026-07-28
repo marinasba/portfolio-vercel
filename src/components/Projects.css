@@ -1,0 +1,119 @@
+.projects-section {
+  padding: var(--section-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-teal), var(--accent-purple));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover {
+  transform: perspective(800px) rotateY(-2deg) rotateX(2deg) translateY(-4px);
+  box-shadow: var(--glow-teal);
+  border-color: var(--border-hover);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text-cream);
+  margin-bottom: 8px;
+}
+
+.project-card-desc {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.project-card-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-card-tag {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--accent-teal);
+  background: rgba(94, 234, 212, 0.05);
+}
+
+.projects-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--border, #1e293b);
+  background: transparent;
+  color: var(--text, #94a3b8);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--accent-teal, #5eead4);
+  color: var(--accent-teal, #5eead4);
+}
+
+.filter-btn.active {
+  background: var(--accent-teal, #5eead4);
+  color: var(--bg, #0a0e17);
+  border-color: var(--accent-teal, #5eead4);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+}
