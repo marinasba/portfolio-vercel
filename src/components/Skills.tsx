@@ -12,6 +12,10 @@ const categoriesFr = [
     skills: ['Flutter', 'React', 'React Native', 'Expo', 'Next.js', 'Vite'],
   },
   {
+    title: 'Traitement et analyse de données',
+    skills: ['Pandas', 'Matplotlib', 'Seaborn', 'Missingno', 'Jupyter Notebook'],
+  },
+  {
     title: 'Outils & Services',
     skills: ['Firebase', 'Supabase', 'Shopify', 'Git', 'OneSignal'],
   },
@@ -39,6 +43,10 @@ const categoriesEn = [
     skills: ['Flutter', 'React', 'React Native', 'Expo', 'Next.js', 'Vite'],
   },
   {
+    title: 'Data processing & analysis',
+    skills: ['Pandas', 'Matplotlib', 'Seaborn', 'Missingno', 'Jupyter Notebook'],
+  },
+  {
     title: 'Tools & Services',
     skills: ['Firebase', 'Supabase', 'Shopify', 'Git', 'OneSignal'],
   },
@@ -64,6 +72,10 @@ const categoriesEs = [
   {
     title: 'Frameworks',
     skills: ['Flutter', 'React', 'React Native', 'Expo', 'Next.js', 'Vite'],
+  },
+  {
+    title: 'Tratamiento y análisis de datos',
+    skills: ['Pandas', 'Matplotlib', 'Seaborn', 'Missingno', 'Jupyter Notebook'],
   },
   {
     title: 'Herramientas y Servicios',
