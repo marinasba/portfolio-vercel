@@ -21,11 +21,15 @@ const categoriesFr = [
   },
   {
     title: 'Design',
-    skills: ['Figma', 'Canva', 'Adobe Illustrator', 'Procreate'],
+    skills: ['Figma', 'Canva', 'Adobe Illustrator', 'Procreate', 'UI/UX'],
+  },
+  {
+    title: 'Communication',
+    skills: ['SEO', 'Marketing digital', 'Création de contenu', 'Réseaux sociaux', 'E-commerce'],
   },
   {
     title: 'Autres',
-    skills: ['UI/UX Design', 'SEO', 'Marketing digital', 'Création de contenu', 'E-commerce', 'Réseaux sociaux', 'Gestion de projet', 'Ingénierie pédagogique'],
+    skills: ['Gestion de projet', 'Ingénierie pédagogique'],
   },
   {
     title: 'Langues étrangères',
@@ -52,11 +56,15 @@ const categoriesEn = [
   },
   {
     title: 'Design',
-    skills: ['Figma', 'Canva', 'Adobe Illustrator', 'Procreate'],
+    skills: ['Figma', 'Canva', 'Adobe Illustrator', 'Procreate', 'UI/UX'],
+  },
+  {
+    title: 'Communication',
+    skills: ['SEO', 'Digital Marketing', 'Content Creation', 'Social media', 'E-commerce'],
   },
   {
     title: 'Other',
-    skills: ['UI/UX Design', 'SEO', 'Digital Marketing', 'Content Creation', 'E-commerce', 'Social media', 'Project management', 'Instructional design'],
+    skills: ['Project management', 'Instructional design'],
   },
   {
     title: 'Foreign languages',
@@ -83,11 +91,15 @@ const categoriesEs = [
   },
   {
     title: 'Diseño',
-    skills: ['Figma', 'Canva', 'Adobe Illustrator', 'Procreate'],
+    skills: ['Figma', 'Canva', 'Adobe Illustrator', 'Procreate', 'UI/UX'],
+  },
+  {
+    title: 'Comunicación',
+    skills: ['SEO', 'Marketing digital', 'Creación de contenido', 'Redes sociales', 'E-commerce'],
   },
   {
     title: 'Otros',
-    skills: ['Diseño UI/UX', 'SEO', 'Marketing digital', 'Creación de contenido', 'E-commerce', 'Redes sociales', 'Gestión de proyectos', 'Diseño instruccional'],
+    skills: ['Gestión de proyectos', 'Diseño instruccional'],
   },
   {
     title: 'Idiomas extranjeros',

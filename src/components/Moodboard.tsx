@@ -89,17 +89,19 @@ export default function Moodboard() {
       onPointerMove={editMode ? handlePointerMove : undefined}
       onPointerUp={editMode ? handlePointerUp : undefined}
     >
-      {/* Barre d'édition */}
-      <div className="edit-bar">
-        <button className="edit-toggle" onClick={() => setEditMode(!editMode)}>
-          {editMode ? 'Quitter le mode édition' : 'Mode édition'}
-        </button>
-        {editMode && (
-          <button className="edit-export" onClick={exportPositions}>
-            Exporter les positions
+      {/* Barre d'édition (dev only, cachée en production) */}
+      {import.meta.env.DEV && (
+        <div className="edit-bar">
+          <button className="edit-toggle" onClick={() => setEditMode(!editMode)}>
+            {editMode ? 'Quitter le mode édition' : 'Mode édition'}
           </button>
-        )}
-      </div>
+          {editMode && (
+            <button className="edit-export" onClick={exportPositions}>
+              Exporter les positions
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Titre central */}
       <div className="moodboard-title">
