@@ -105,10 +105,10 @@ export default function About() {
               <h4>{lang === 'fr' ? 'Loisirs' : lang === 'es' ? 'Aficiones' : 'Hobbies'}</h4>
               <div className="hobbies-list">
                 {(lang === 'fr'
-                  ? ['Langues étrangères', 'Livres & livres audio', 'Marche', 'Loisirs créatifs']
+                  ? ['Piano', 'Langues étrangères', 'Livres & livres audio', 'Marche', 'Loisirs créatifs']
                   : lang === 'es'
-                  ? ['Idiomas extranjeros', 'Libros y audiolibros', 'Caminar', 'Manualidades']
-                  : ['Foreign languages', 'Books & audiobooks', 'Walking', 'Creative crafts']
+                  ? ['Piano', 'Idiomas extranjeros', 'Libros y audiolibros', 'Caminar', 'Manualidades']
+                  : ['Piano', 'Foreign languages', 'Books & audiobooks', 'Walking', 'Creative crafts']
                 ).map((hobby) => (
                   <span key={hobby} className="hobby-tag">{hobby}</span>
                 ))}
