@@ -64,7 +64,7 @@ export default function ProjectDetail() {
               <polyline points="15 3 21 3 21 9" />
               <line x1="10" y1="14" x2="21" y2="3" />
             </svg>
-            <span>{lang === 'fr' ? 'Voir en ligne' : lang === 'es' ? 'Ver en línea' : 'View live'}</span>
+            <span>{link.label || (lang === 'fr' ? 'Voir en ligne' : lang === 'es' ? 'Ver en línea' : 'View live')}</span>
           </a>
         )
       })}
@@ -143,6 +143,35 @@ export default function ProjectDetail() {
                 >
                   {s.heading && <h3 className="project-section-heading">{s.heading}</h3>}
                   {s.text && <p className="project-section-text">{s.text}</p>}
+                  {s.link && (
+                    <a
+                      href={s.link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="web-link-btn project-section-link"
+                      style={{ borderColor: project.borderColor, color: project.borderColor }}
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                      <span>{s.link.label}</span>
+                    </a>
+                  )}
+                  {s.videos && s.videos.length > 0 && (
+                    <div className="project-section-videos">
+                      {s.videos.map((src) => (
+                        <video
+                          key={src}
+                          src={src}
+                          controls
+                          playsInline
+                          preload="metadata"
+                        />
+                      ))}
+                    </div>
+                  )}
                   {s.download && (
                     <a
                       href={s.download}

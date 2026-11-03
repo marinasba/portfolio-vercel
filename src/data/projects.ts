@@ -14,7 +14,7 @@ export interface Project {
   links?: { label: string; url: string }[]
   screenshots?: string[]
   video?: string
-  sections?: { heading?: string; text?: string; image?: string; secondaryImage?: string; extraImages?: string[]; small?: boolean; lightBg?: boolean; download?: string; scrollable?: boolean }[]
+  sections?: { heading?: string; text?: string; image?: string; secondaryImage?: string; extraImages?: string[]; small?: boolean; lightBg?: boolean; download?: string; scrollable?: boolean; videos?: string[]; link?: { label: string; url: string } }[]
 }
 
 export const categoriesFr: Record<Category, string> = {
@@ -599,7 +599,13 @@ export const projectsFr: Project[] = [
     borderColor: '#fb923c',
     gradient: 'linear-gradient(135deg, rgba(251,146,60,0.2), rgba(13,17,23,0.8))',
     category: 'social',
+    links: [{ label: 'Voir le portfolio Gariguettes que j\'ai créé', url: 'https://cecileetlivia.my.canva.site/' }],
     sections: [
+      {
+        heading: 'Portfolio de la marque',
+        text: 'J\'ai créé le portfolio personnel de Gariguettes, un site Canva qui présente l\'univers de la marque, ses fondatrices et ses contenus.',
+        link: { label: 'Découvrir le portfolio Gariguettes', url: 'https://cecileetlivia.my.canva.site/' },
+      },
       {
         heading: 'Avant',
         text: 'Feed Instagram avec des couleurs et codes visuels variés : la marque n\'avait pas encore une identité forte et reconnaissable au premier coup d\'œil.',
@@ -622,6 +628,21 @@ export const projectsFr: Project[] = [
         text: '3 684 732 vues sur les 6 derniers mois, dont 74,2 % via des non-followers : la nouvelle ligne éditoriale élargit massivement la portée organique.',
         image: '/screenshots/gariguettes-social/stats-vues.jpg',
         small: true,
+      },
+      {
+        heading: 'Quelques exemples de visuels Instagram',
+        image: '/screenshots/gariguettes-social/visuel-1.png',
+        secondaryImage: '/screenshots/gariguettes-social/visuel-2.png',
+        extraImages: ['/screenshots/gariguettes-social/visuel-3.png'],
+      },
+      {
+        heading: 'Montage vidéo',
+        text: 'Exemples de vidéos montées pour les réseaux sociaux de Gariguettes.',
+        videos: [
+          '/videos/gariguettes-social/transat.mp4',
+          '/videos/gariguettes-social/twistshake.mp4',
+          '/videos/gariguettes-social/porte-bebe.mp4',
+        ],
       },
     ],
   },
@@ -1216,6 +1237,29 @@ export const projectsEn: Project[] = [
     borderColor: '#fb923c',
     gradient: 'linear-gradient(135deg, rgba(251,146,60,0.2), rgba(13,17,23,0.8))',
     category: 'social',
+    links: [{ label: 'See the Gariguettes portfolio I created', url: 'https://cecileetlivia.my.canva.site/' }],
+    sections: [
+      {
+        heading: 'Brand portfolio',
+        text: 'I created the Gariguettes brand portfolio, a Canva site showcasing the brand universe, its founders and its content.',
+        link: { label: 'Discover the Gariguettes portfolio', url: 'https://cecileetlivia.my.canva.site/' },
+      },
+      {
+        heading: 'A few Instagram visuals',
+        image: '/screenshots/gariguettes-social/visuel-1.png',
+        secondaryImage: '/screenshots/gariguettes-social/visuel-2.png',
+        extraImages: ['/screenshots/gariguettes-social/visuel-3.png'],
+      },
+      {
+        heading: 'Video editing',
+        text: 'Examples of videos edited for Gariguettes social media.',
+        videos: [
+          '/videos/gariguettes-social/transat.mp4',
+          '/videos/gariguettes-social/twistshake.mp4',
+          '/videos/gariguettes-social/porte-bebe.mp4',
+        ],
+      },
+    ],
   },
   {
     slug: 'bombshell-social',
@@ -1779,6 +1823,29 @@ export const projectsEs: Project[] = [
     borderColor: '#fb923c',
     gradient: 'linear-gradient(135deg, rgba(251,146,60,0.2), rgba(13,17,23,0.8))',
     category: 'social',
+    links: [{ label: 'Ver el portfolio de Gariguettes que creé', url: 'https://cecileetlivia.my.canva.site/' }],
+    sections: [
+      {
+        heading: 'Portfolio de la marca',
+        text: 'Creé el portfolio personal de Gariguettes, un sitio Canva que presenta el universo de la marca, sus fundadoras y sus contenidos.',
+        link: { label: 'Descubrir el portfolio de Gariguettes', url: 'https://cecileetlivia.my.canva.site/' },
+      },
+      {
+        heading: 'Algunos ejemplos de visuales de Instagram',
+        image: '/screenshots/gariguettes-social/visuel-1.png',
+        secondaryImage: '/screenshots/gariguettes-social/visuel-2.png',
+        extraImages: ['/screenshots/gariguettes-social/visuel-3.png'],
+      },
+      {
+        heading: 'Edición de vídeo',
+        text: 'Ejemplos de vídeos editados para las redes sociales de Gariguettes.',
+        videos: [
+          '/videos/gariguettes-social/transat.mp4',
+          '/videos/gariguettes-social/twistshake.mp4',
+          '/videos/gariguettes-social/porte-bebe.mp4',
+        ],
+      },
+    ],
   },
   {
     slug: 'bombshell-social',

@@ -359,3 +359,26 @@
     height: 380px;
   }
 }
+
+.project-section-link {
+  align-self: flex-start;
+}
+
+.project-section-videos {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-section-videos video {
+  flex: 1 1 0;
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  display: block;
+  border-radius: var(--radius, 12px);
+  border: 1px solid var(--border, #1e293b);
+  background: #000;
+}
