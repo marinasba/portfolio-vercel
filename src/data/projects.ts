@@ -593,7 +593,7 @@ export const projectsFr: Project[] = [
     slug: 'gariguettes-social',
     image: '/projects/gariguettes-social.png',
     title: 'Gariguettes',
-    subtitle: 'Gestion du compte Instagram et Tiktok d\'une marque de tisanes biologiques pour femmes enceintes. Tiktok 27k abonnés, Instagram 14k abonnés',
+    subtitle: 'Gestion du compte Instagram et Tiktok d\'une marque de tisanes biologiques pour femmes enceintes. Création de contenu, montage vidéo',
     description: 'Gestion complète des réseaux sociaux pour Gariguettes, marque de tisanes bio pour la grossesse et l\'allaitement. Création de contenu, stratégie éditoriale, community management. Résultats : TikTok 27k abonnés, Instagram 12k abonnés.',
     tags: ['TikTok', 'Instagram', 'Community management', 'Stratégie'],
     borderColor: '#fb923c',
